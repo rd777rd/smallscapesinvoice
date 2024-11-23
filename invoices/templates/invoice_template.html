@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% endblock %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invoice {{ invoice.id }}</title>
+</head>
+<body>
+    <h1>Invoice {{ invoice.id }}</h1>
+    <p>Client: {{ invoice.client_name }}</p>
+    <p>Email: {{ invoice.client_email }}</p>
+    <p>Date: {{ invoice.date }}</p>
+    <h3>Invoice Items</h3>
+    <ul>
+        {% for item in invoice.items.all %}
+            <li>{{ item.item_name }} - Base Price: ${{ item.base_price }} - ${{ item.total }}
+                <ul>
+                    {% for supply in item.supplies.all %}
+                        <li>{{ supply.name }} - {{ supply.quantity }} @ ${{ supply.price }}</li>
+                    {% endfor %}
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+    <p>Total: ${{ invoice.total }}</p>
+</body>
+</html>
