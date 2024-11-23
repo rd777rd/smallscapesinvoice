@@ -12,16 +12,25 @@ body {
     width:100%;
     margin:20px auto;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     
+}
+.linkList{
+    display: flex;
+    width: 100%;
+    margin:5px auto;
+    justify-content: space-evenly;
 }
 .navlink{
     display: inline-block;
-    padding:10px;
     font-size: 16px;
     border-radius: 20px;
+    padding:10px;
     text-decoration: none;
     color:black;
     text-wrap: nowrap;
+    width:33%;
+    text-align: center;
     border:1px solid green;
 
 }
@@ -190,6 +199,7 @@ li ul li ul li {
     border-radius: 20px;
     text-decoration: none;
     color:red;
+    font-weight: bold;
     text-wrap: nowrap;
     border:1px solid red;
 }
@@ -199,12 +209,110 @@ li ul li ul li {
     color: #f4f4f4;
 
 }
+.signupbody {
+    font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width:100%;
+    margin: 0;
+}
+.signup-container {
+    display: block;
+    background-color: green;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height:auto;
+}
+.signup-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+.signup-container form {
+    display: flex;
+    flex-direction: column;
+}
+.signup-container form .form-group {
+    margin-bottom: 15px;
+}
+.signup-container form .form-group label {
+    margin-bottom: 5px;
+    display: block;
+}
+.signup-container form .form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+.signup-container form .submit-button {
+    padding: 10px;
+    background-color: white;
+    color: green;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+.signup-container form .submit-button:hover {
+    background-color: black;
+}
+.login-container {
+    display: block;
+    background-color: green;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height:auto;
+}
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+.login-container form .form-group {
+    margin-bottom: 15px;
+}
+.login-container form .form-group label {
+    margin-bottom: 5px;
+    display: block;
+}
+.login-container form .form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+.login-container form .submit-button {
+    padding: 10px;
+    background-color: white;
+    color: green;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+.login-container form .submit-button:hover {
+    background-color: black;
+}
 
 
 /* Responsive styling */
 @media (max-width: 600px) {
     .navlink{
         font-size:14px;
+        font-weight: bold;
     }
     .logoutButton{
         font-size: 14px;
@@ -263,6 +371,7 @@ li ul li ul li {
         font-size: 12px;
         font-weight: bold;
     }
+    
 
 }
 @media(max-width:425px){
