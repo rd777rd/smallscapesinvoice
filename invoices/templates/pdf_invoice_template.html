@@ -52,12 +52,20 @@
             font-weight: bold;
         }
         .invoice-total {
-            text-align: right;
+            text-align: center;
             font-size: 18px;
             font-weight: bold;
             border-top: 2px solid #eee;
             padding-top: 10px;
         }
+        .paylink{
+            text-decoration: none;
+            color:#333;
+        }
+        .paylink:hover{
+            color:green;
+        }
+        
     </style>
 </head>
 <body>
@@ -98,7 +106,7 @@
             </tbody>
         </table>
         <div class="invoice-total">
-            Total: ${{ invoice.total }}
+            <p>Accepted Payments: Cash <a href="" class="paylink">Zelle</a> <a href="" class="paylink">CashApp</a> Total: ${{ invoice.total }}</p>
         </div>
     </div>
 </body>
