@@ -119,7 +119,7 @@ def send_invoice_email(invoice):
     if pdf:
         email = EmailMessage(
             f"Invoice {invoice.id}",
-            f"Please find attached the invoice {invoice.id}.",
+            f"Dear {invoice.client_name}, Please find your invoice details below.",
             'roman.drake.7@gmail.com',
             [invoice.client_email]
         )
