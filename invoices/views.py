@@ -81,7 +81,7 @@ class CreateInvoiceItemView(LoginRequiredMixin, View):
             for supply_id in selected_supplies:
                 supply = Supply.objects.get(id=supply_id)
                 item.supplies.add(supply)
-            item.total = sum(supply.total_price for supply in item.supplies.all())
+            item.total = sum(supply.total_price() for supply in item.supplies.all())
             item.save()
             return redirect('create_invoice')
         else:
