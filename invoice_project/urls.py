@@ -16,8 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from invoices.views import custom_404_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('invoices.urls'))
+    path('', include('invoices.urls')),
 ]
+
+handler404 = 'invoices.views.custom_404_view'
