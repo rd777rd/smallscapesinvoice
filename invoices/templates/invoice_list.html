@@ -17,9 +17,7 @@
                                 {% for supply in item.supplies.all %}
                                     <li class ="supply">
                                         {{ supply.name }} - {{ supply.quantity }} @ ${{ supply.price }} = ${{ supply.total_price }}
-                                        <!-- {% if invoice.id and item.id and supply.id %}
-                                            <a href="{% url 'remove_supply' invoice.id item.id supply.id %}">Remove Supply</a>
-                                        {% endif %} -->
+                                        
                                     </li>
                                 {% endfor %}
                             </ul>
