@@ -220,7 +220,7 @@ li ul li ul li {
     color:#51CD0E;
     font-weight: bold;
     text-wrap: nowrap;
-    border:1px solid red;
+    border:1px solid #51CD0E;
 }
 
 .loginButton:hover{
