@@ -209,6 +209,25 @@ li ul li ul li {
     color: #f4f4f4;
 
 }
+.loginButton{
+    display: inline-block;
+    background-color: #f4f4f4;
+    padding:10px;
+    font-size: 16px;
+    margin: 0 auto;
+    border-radius: 20px;
+    text-decoration: none;
+    color:red;
+    font-weight: bold;
+    text-wrap: nowrap;
+    border:1px solid red;
+}
+
+.loginButton:hover{
+    background-color: red;
+    color: #f4f4f4;
+
+}
 .signupbody {
     font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
     color: #333;
