@@ -35,7 +35,7 @@ body {
 
 }
 .navlink:hover{
-    background-color: green;
+    background-color:#51CD0E;
     color:#f4f4f4;
 
 }
@@ -47,7 +47,7 @@ main{
             align-items: center;
 }
 .container {
-    background-color: green;
+    background-color: #51CD0E;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -79,7 +79,7 @@ form p input{
     border: none;
     outline: none;
     display: inline;
-    background-color: green;
+    background-color: #51CD0E;
     border-bottom: 2px solid black;
     
 
@@ -108,7 +108,7 @@ form label{
 }
 .submitButton:hover {
     background-color: #f4f4f4;
-    color:green;
+    color:#51CD0E;
 }
 ul {
     list-style-type: none;
@@ -150,7 +150,7 @@ li ul li ul li {
 
 .itemContainer::-webkit-scrollbar, .supplyContainer::-webkit-scrollbar, .invoicelist::-webkit-scrollbar { 
     width: 20px;
-    background-color:green;
+    background-color:#51CD0E;
     color:black;
  }
   
@@ -241,7 +241,7 @@ li ul li ul li {
 }
 .signup-container {
     display: block;
-    background-color: green;
+    background-color: #51CD0E;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -273,7 +273,7 @@ li ul li ul li {
 .signup-container form .submit-button {
     padding: 10px;
     background-color: white;
-    color: green;
+    color: #51CD0E;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -284,7 +284,7 @@ li ul li ul li {
 }
 .login-container {
     display: block;
-    background-color: green;
+    background-color: #51CD0E;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -316,7 +316,7 @@ li ul li ul li {
 .login-container form .submit-button {
     padding: 10px;
     background-color: white;
-    color: green;
+    color: #51CD0E;
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -356,7 +356,7 @@ li ul li ul li {
         font-size: 12px;
     }
     .container {
-        background-color: green;
+        background-color: #51CD0E;
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -395,7 +395,7 @@ li ul li ul li {
 }
 @media(max-width:425px){
     .container {
-        background-color: green;
+        background-color:#51CD0E;
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -442,7 +442,7 @@ li ul li ul li {
         padding:5px;
     }
     .container {
-        background-color: green;
+        background-color: #51CD0E;
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -481,7 +481,7 @@ li ul li ul li {
 }
 @media(max-width:320px){
     .container {
-        background-color: green;
+        background-color: #51CD0E;
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
