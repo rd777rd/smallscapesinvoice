@@ -217,14 +217,14 @@ li ul li ul li {
     margin: 0 auto;
     border-radius: 20px;
     text-decoration: none;
-    color:red;
+    color:#51CD0E;
     font-weight: bold;
     text-wrap: nowrap;
     border:1px solid red;
 }
 
 .loginButton:hover{
-    background-color: red;
+    background-color: #51CD0E;
     color: #f4f4f4;
 
 }
