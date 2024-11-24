@@ -11,6 +11,7 @@ from io import BytesIO
 from xhtml2pdf import pisa
 from .models import Invoice, InvoiceItem, Supply
 from .forms import InvoiceForm, InvoiceItemForm, SupplyForm, SignUpForm
+from django.shortcuts import redirect
 
 class InvoiceListView(LoginRequiredMixin, ListView):
     model = Invoice
@@ -91,19 +92,6 @@ class CreateInvoiceItemView(LoginRequiredMixin, View):
             })
 
 
-class RemoveSupplyView(LoginRequiredMixin, View):
-    login_url = 'login'
-
-    def post(self, request, invoice_id, item_id, supply_id):
-        invoice = Invoice.objects.get(id=invoice_id)
-        item = InvoiceItem.objects.get(id=item_id)
-        supply = Supply.objects.get(id=supply_id)
-        item.supplies.remove(supply)
-        item.calculate_total()
-        invoice.calculate_total()
-        return redirect('invoice_list')
-
-
 def generate_invoice_pdf(invoice):
     template = get_template('pdf_invoice_template.html')
     html = template.render({'invoice': invoice})
@@ -147,3 +135,6 @@ def signup(request):
 def custom_logout_view(request):
      logout(request) 
      return redirect('login')
+
+def custom_404_view(request, exception):
+    return redirect('invoice_list')
